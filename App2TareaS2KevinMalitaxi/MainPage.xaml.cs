@@ -27,17 +27,17 @@ namespace App2TareaS2KevinMalitaxi
 
             try
             {
-                if (Usuario == user)
+                if (Usuario == user && Clave == pass)
                 {
                     await Navigation.PushAsync(new ventanaDos(Usuario, Clave));
 
                 }
-                else if (Clave == pass)
+        
+                else if (Clave != pass)
                 {
-                    await Navigation.PushAsync(new ventanaDos(Usuario, Clave));
-
+                    DisplayAlert("ERROR DE INGRESO DE CREDENCIALES", "Usuario o Contraseña Incorrecta", "OK");
                 }
-                else if (Usuario != user && Clave != pass)
+                else if (Usuario != user)
                 {
                     DisplayAlert("ERROR DE INGRESO DE CREDENCIALES", "Usuario o Contraseña Incorrecta", "OK");
                 }

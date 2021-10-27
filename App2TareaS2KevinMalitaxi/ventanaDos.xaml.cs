@@ -61,5 +61,77 @@ namespace App2TareaS2KevinMalitaxi
             }
 
         }
+
+        private void txtValorUno_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            try
+            {
+                double valU = Convert.ToDouble(txtValorUno.Text);
+                if (valU > 10)
+                {
+                    DisplayAlert("ERROR", "Cantidad digitada no debe ser mayor a 10", "OK");
+                }
+            }
+            catch (Exception ex) 
+            {
+                DisplayAlert("ERROR", ex.Message, "OK");
+
+            }
+            }
+
+        private void txtValorDos_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            try
+            {
+                double valD = Convert.ToDouble(txtValorDos.Text);
+                if (valD > 10)
+                {
+                    DisplayAlert("ERROR", "Cantidad digitada no debe ser mayor a 10", "OK");
+                }
+            }
+            catch (Exception ex)
+            {
+                DisplayAlert("ERROR", ex.Message, "OK");
+
+            }
+
+        }
+
+        private void txtValorTres_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            try
+            {
+                double valT = Convert.ToDouble(txtValorTres.Text);
+                if (valT > 10)
+                {
+                    DisplayAlert("ERROR", "Cantidad digitada no debe ser mayor a 10", "OK");
+                }
+            }
+            catch (Exception ex)
+            {
+                DisplayAlert("ERROR", ex.Message, "OK");
+
+            }
+
+        }
+
+        private void txtValorCuatro_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            try
+            {
+                double valC = Convert.ToDouble(txtValorCuatro.Text);
+                if (valC > 10)
+                {
+                    DisplayAlert("ERROR", "Cantidad digitada no debe ser mayor a 10", "OK");
+                }
+            }
+            catch (Exception ex)
+            {
+                DisplayAlert("ERROR", ex.Message, "OK");
+
+            }
+
+
+        }
     }
     }

@@ -34,19 +34,19 @@
                 </Grid.ColumnDefinitions>
 
                 <Label Text="Nota Seg. 1: " Grid.Row="0" Grid.Column="0"/>
-                <Entry x:Name="txtValorUno" Keyboard="Numeric" Grid.Row="1" Grid.Column="0"/>
+                <Entry x:Name="txtValorUno" Keyboard="Numeric" Grid.Row="1" Grid.Column="0" TextChanged="txtValorUno_TextChanged"/>
 
                 <Label Text="Examen Parcial 1: " Grid.Row="0" Grid.Column="1"/>
-                <Entry x:Name="txtValorDos" Keyboard="Numeric" Grid.Row="1" Grid.Column="1"/>
+                <Entry x:Name="txtValorDos" Keyboard="Numeric" Grid.Row="1" Grid.Column="1" TextChanged="txtValorDos_TextChanged"/>
 
                 <Label Text="Nota Parcial 1 " Grid.Row="0" Grid.Column="2"/>
                 <Entry x:Name="txtResultado1" IsReadOnly="True" Grid.Row="1" Grid.Column="2"/>
 
                 <Label Text="Nota Seg. 2: " Grid.Row="2" Grid.Column="0"/>
-                <Entry x:Name="txtValorTres" Keyboard="Numeric" Grid.Row="3" Grid.Column="0"/>
+                <Entry x:Name="txtValorTres" Keyboard="Numeric" Grid.Row="3" Grid.Column="0" TextChanged="txtValorTres_TextChanged"/>
 
                 <Label Text="Examen Parcial 2: " Grid.Row="2" Grid.Column="1"/>
-                <Entry x:Name="txtValorCuatro" Keyboard="Numeric" Grid.Row="3" Grid.Column="1"/>
+                <Entry x:Name="txtValorCuatro" Keyboard="Numeric" Grid.Row="3" Grid.Column="1" TextChanged="txtValorCuatro_TextChanged"/>
 
                 <Label Text="Nota Parcial 2: " Grid.Row="2" Grid.Column="2"/>
                 <Entry x:Name="txtResultado2" IsReadOnly="True" Grid.Row="3" Grid.Column="2"/>

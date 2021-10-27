@@ -11,7 +11,6 @@
         <Entry x:Name="txtUsuario" Placeholder="Por Favor Digite el Usuario: "/>
         <Entry x:Name="txtClave" Placeholder="Por Favor Digite su Clave: " IsPassword="True"/>
 
-        
         <Button x:Name="btnAbrir" Text="Abrir Ventana Dos" Clicked="btnAbrir_Clicked"/>
         
 
